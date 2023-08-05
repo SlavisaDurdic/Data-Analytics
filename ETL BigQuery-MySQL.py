@@ -14,7 +14,7 @@ import math
 start = time.time()
 print(f'The script started on {datetime.datetime.now()}...')
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'infra-data-391312-15c1b6264ace.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
 
 client = bigquery.Client()
 
@@ -48,7 +48,7 @@ print(f"The download time finished in {download_time - start} seconds "
 
 print('Establishing the connection with MySQL server...')
 try:
-    conn = mysql.connect(host='localhost', database='data_analysis', user='root', password='DZpiJoWKGYs8WMBObFrp')
+    conn = mysql.connect(host='localhost', database='<database>', user='<user>', password='<password>')
     if conn.is_connected():
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
