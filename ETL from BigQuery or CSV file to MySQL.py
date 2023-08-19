@@ -15,8 +15,8 @@ import math
 start = time.time()
 print(f'The script started on {datetime.datetime.now()}...')
 
-sql_table = 'Enter a table name' # Enter a name of the MySQL table, e.g. 'bigquery_imdb_title_basics'
-data_source = 'Enter a sql table name or a file name path' # Full path to a file or a database table name
+sql_table = 'Enter a MySQL table name' # Enter a name of the MySQL table, e.g. 'bigquery_imdb_title_basics'
+data_source = 'Enter a BigQuery table name or a file name path' # Full path to a file or a BigQuery table name
 # Write an sql query to pool values from BigQuery
 db_query = (
     f"SELECT * FROM `{data_source}`"
