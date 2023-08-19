@@ -1,8 +1,8 @@
 # Data-Analytics
-My portfolio of public datasets analysis/analytics.
+My portfolio of public dataset analysis/analytics.
 
-This GitHub repository consists of python "template" scripts, and folders.
-Each folder is created for a specific project analysis, and contains:
+This GitHub repository consists of python "template" scripts, and project folders.
+Each folder is created for a specific dataset analysis, and mainly contains:
 1) readme text file with detailed description about the project,
 2) python script used to pool data from BigQuery and load it into a database,
 3) Microsoft Power Point file with up to 10 slides that summarize the project,
