@@ -105,7 +105,7 @@ try:
                         break
                     else:
                         if (type(sqlValues[i][colName_filtered.index(col)]) is int):
-                            data_type = 'INT'
+                            data_type = 'INT' # If the load process fails due to the MySQL INT data type, use DECIMAL instead
                         if (type(sqlValues[i][colName_filtered.index(col)]) is dict):
                             data_type = 'JSON'
                         if (type(sqlValues[i][colName_filtered.index(col)]) is float):
