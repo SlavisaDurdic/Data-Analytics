@@ -1,7 +1,8 @@
-# MAKE SURE TO PROVIDE CORRECT INFO FOR db_query AND sql_table DATA
-# ---> LINES 22 AND 25
+# MAKE SURE TO PROVIDE CORRECT INFO FOR sql_table, data_source AND db_query DATA
+# ---> LINES 18-21
 
 import os
+import csv
 from google.cloud import bigquery
 import pandas as pd
 import mysql.connector as mysql
@@ -14,41 +15,67 @@ import math
 start = time.time()
 print(f'The script started on {datetime.datetime.now()}...')
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
-
-client = bigquery.Client()
-
-# Enter a name of the MySQL table, e.g. 'bigquery_imdb_title_basics'
-sql_table = 'Enter a table name'
-
+sql_table = 'Enter a table name' # Enter a name of the MySQL table, e.g. 'bigquery_imdb_title_basics'
+data_source = 'Enter a sql table name or a file name path' # Full path to a file or a database table name
 # Write an sql query to pool values from BigQuery
-db_query = """
-        SELECT * FROM `bigquery-public-data.imdb.title_basics` LIMIT 5;
-     """
+db_query = (
+    f"SELECT * FROM `{data_source}`"
+    f"LIMIT 100;"
+            )
 
-query_job = client.query(db_query)  # API request
-rows = query_job.result()  # Waits for query to finish
+if '.csv' in data_source:
+    data = []
+    with open(data_source, 'r') as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            data.append(row)
+    colName = data[0]
+    sqlValues = data[1:]
 
-print('Downloading values and populating the lists...')
-colName = []
-sqlValues = []
-for row in list(rows):
-    colName.append(row.keys())
-    sqlValues.append(row.values())
-df_colName = pd.DataFrame(colName)
-df_sqlValues = pd.DataFrame(sqlValues)
-colName_filtered = list(colName[0])
-df_sqlValues.columns = list(colName[0])
-df_sqlValues.insert(0, "helper_id", range(len(sqlValues)))
-download_time = time.time()
-print(f"The download time finished in {download_time - start} seconds "
-      f"(i.e. ~ {math.floor((download_time - start) / 3600)} hours and "
-      f"{round((((download_time - start) / 3600)-(math.floor((download_time - start) / 3600))) * 60)} minutes)..."
-      )
+    df_colName = pd.DataFrame(colName)
+    df_sqlValues = pd.DataFrame(sqlValues)
+    colName_filtered = []
+    for i in range(len(colName)): # Concatenating column name splits into one word
+        if len(colName[i].split()) > 1:
+            colName_filtered.append("_".join(colName[i].split()))
+        else:
+            colName_filtered.append(colName[i])
+    df_sqlValues.columns = list(colName)
+    df_sqlValues.insert(0, "helper_id", range(len(sqlValues)))
+    print(colName_filtered)
+    download_time = time.time()
+    print(f"Data collection and cleansing finished in {download_time - start} seconds "
+          f"(i.e. ~ {math.floor((download_time - start) / 3600)} hours and "
+          f"{round((((download_time - start) / 3600) - (math.floor((download_time - start) / 3600))) * 60)} minutes)..."
+          )
+
+else:
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
+    client = bigquery.Client()
+    query_job = client.query(db_query)  # API request
+    rows = query_job.result()  # Waits for query to finish
+
+    print('Downloading values and populating the lists...')
+    colName = []
+    sqlValues = []
+    for row in list(rows):
+        colName.append(row.keys())
+        sqlValues.append(row.values())
+
+    df_colName = pd.DataFrame(colName)
+    df_sqlValues = pd.DataFrame(sqlValues)
+    colName_filtered = list(colName[0])
+    df_sqlValues.columns = list(colName[0])
+    df_sqlValues.insert(0, "helper_id", range(len(sqlValues)))
+    download_time = time.time()
+    print(f"The download time finished in {download_time - start} seconds "
+          f"(i.e. ~ {math.floor((download_time - start) / 3600)} hours and "
+          f"{round((((download_time - start) / 3600)-(math.floor((download_time - start) / 3600))) * 60)} minutes)..."
+          )
 
 print('Establishing the connection with MySQL server...')
 try:
-    conn = mysql.connect(host='localhost', database='<database>', user='<user>', password='<password>')
+    conn = mysql.connect(host='<server_name>', database='<database_name>', user='<username>', password='<user_password>')
     if conn.is_connected():
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
@@ -78,7 +105,7 @@ try:
                         break
                     else:
                         if (type(sqlValues[i][colName_filtered.index(col)]) is int):
-                            data_type = 'INT' # If script fails due to the INT data type, use DECIMAL instead
+                            data_type = 'INT'
                         if (type(sqlValues[i][colName_filtered.index(col)]) is dict):
                             data_type = 'JSON'
                         if (type(sqlValues[i][colName_filtered.index(col)]) is float):
