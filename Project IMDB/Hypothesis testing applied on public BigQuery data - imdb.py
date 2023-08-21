@@ -9,7 +9,7 @@ import statistics as st
 
 start = time.time()
 
-# Provide information for the following items to pool values from BigQuery
+# Provide information for the following items to pull values from BigQuery
 sample_variable = 'average_rating'
 query_source_1 = 'bigquery-public-data.imdb.title_ratings'
 query_source_2 = 'Enter the source table'  # If there is no another sample, leave as is
