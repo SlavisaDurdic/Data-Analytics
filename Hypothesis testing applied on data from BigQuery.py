@@ -12,7 +12,7 @@ import math
 
 start = time.time()
 
-# Provide information for the following items to pool values from BigQuery
+# Provide information for the following items to pull values from BigQuery
 sample_1_variable = 'Enter your variable name'
 query_source_1 = 'Enter the source table' # A BigQuery table full name, e.g. 'bigquery-public-data.imdb.title_ratings'
 # If needed, adjust the sql query with additional information (e.g. condition in WHERE clause)
