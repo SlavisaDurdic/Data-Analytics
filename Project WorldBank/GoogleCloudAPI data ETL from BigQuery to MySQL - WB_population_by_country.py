@@ -19,7 +19,7 @@ client = bigquery.Client()
 # Enter a name of the MySQL table, e.g. 'bigquery_imdb_title_basics'
 sql_table = 'bigquery_WB_global_population_by_country'
 
-# Write an sql query to pool values from BigQuery
+# Write an sql query to pull values from BigQuery
 db_query = """
         SELECT * FROM `bigquery-public-data.world_bank_global_population.population_by_country`;
      """
