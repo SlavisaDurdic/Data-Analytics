@@ -12,7 +12,7 @@ TASK i.e. WHAT HAVE I DONE?
 
 For the ETL processes, I have used Python programming language and accordingly the "Python Client for Google BigQuery" Google Cloud official documentation reference (https://cloud.google.com/python/docs/reference/bigquery/latest).
 
-I've generated a python script in PyCharm integrated development environment - "GoogleCloudAPI data ETL from BigQuery to MySQL - covid19.py" (which is available in the GitHub project folder) in order to automate the process as much as possible. Users should edit lines 20 and 23 of the script, i.e. users need to 1) provide information about the MySQL table name which will be created in the database, and 2) define sql query to pool data from the "bigquery-public-data.covid19_usafacts.summary" dataset on BigQuery.
+I've generated a python script in PyCharm integrated development environment - "GoogleCloudAPI data ETL from BigQuery to MySQL - covid19.py" (which is available in the GitHub project folder) in order to automate the process as much as possible. Users should edit lines 20 and 23 of the script, i.e. users need to 1) provide information about the MySQL table name which will be created in the database, and 2) define sql query to pull data from the "bigquery-public-data.covid19_usafacts.summary" dataset on BigQuery.
 
 You can notice different python libraries imported to my .py file, such as pandas (... to work with dataframes), mysql.connector (... to connect to and load data into a mySQL database), and decimal (due to the formating reasons).
 
