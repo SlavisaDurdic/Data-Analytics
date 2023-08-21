@@ -12,7 +12,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
 
 client = bigquery.Client()
 
-# Provide information for the following 4 items (independent, dependent, query_source, db_query) to pool values from BigQuery
+# Provide information for the following 4 items (independent, dependent, query_source, db_query) to pull values from BigQuery
 independent = 'confirmed_cases'
 dependent = 'deaths'
 query_source = 'bigquery-public-data.covid19_usafacts.summary'
