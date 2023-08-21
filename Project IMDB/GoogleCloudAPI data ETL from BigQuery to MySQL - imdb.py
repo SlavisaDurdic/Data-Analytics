@@ -21,7 +21,7 @@ client = bigquery.Client()
 # Enter a name of the MySQL table
 sql_table = 'publicbigquery_imdb_title_basics_full'
 
-# Write an sql query to pool values from BigQuery
+# Write an sql query to pull values from BigQuery
 db_query = """
         SELECT * FROM `bigquery-public-data.imdb.title_basics`;
      """
