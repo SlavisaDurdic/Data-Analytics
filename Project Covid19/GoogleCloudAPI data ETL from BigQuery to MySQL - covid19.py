@@ -21,7 +21,7 @@ client = bigquery.Client()
 # Enter a name of the MySQL table
 sql_table = 'publicbigquery_covid19_usafacts_summary'
 
-# Write an sql query to pool values from BigQuery
+# Write an sql query to pull values from BigQuery
 db_query = """
         SELECT * FROM `bigquery-public-data.covid19_usafacts.summary`;
      """
