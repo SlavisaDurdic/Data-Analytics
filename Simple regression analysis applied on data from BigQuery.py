@@ -12,7 +12,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
 
 client = bigquery.Client()
 
-# Provide information for the following 4 items (independent, dependent, query_source, db_query) to pool values from BigQuery
+# Provide information for the following 4 items (independent, dependent, query_source, db_query) to pull values from BigQuery
 independent = 'Enter the independent variable'
 dependent = 'Enter the dependent variable'
 query_source = 'Enter the correct source table destination' # A BigQuery table full name, e.g. 'bigquery-public-data.imdb.title_ratings'
