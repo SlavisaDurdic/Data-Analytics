@@ -21,7 +21,7 @@ client = bigquery.Client()
 # Enter a name of the MySQL table, e.g. 'bigquery_imdb_title_basics'
 sql_table = 'bigquery_london_crime_crime_by_lsoa'
 
-# Write an sql query to pool values from BigQuery
+# Write an sql query to pull values from BigQuery
 db_query = """
         SELECT * FROM `bigquery-public-data.london_crime.crime_by_lsoa` WHERE year > 2013;
      """
