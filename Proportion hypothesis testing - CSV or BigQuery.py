@@ -45,7 +45,7 @@ if data_source_2 == 'Enter a data source':
     print("Hypothesis testing of population proportion...")
 
     if '.csv' not in data_source_1:
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'infra-data-391312-15c1b6264ace.json'
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
         client = bigquery.Client()
         query_job = client.query(sql_query_1)  # API request
         rows = query_job.result()  # Waits for query to finish
@@ -138,7 +138,7 @@ else:
     # hypothesis_testing = right_tailed_test # Right-sided one-tailed test
 
     if '.csv' not in data_source_1 and '.csv' not in data_source_2:
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'infra-data-391312-15c1b6264ace.json'
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
         client = bigquery.Client()
         query_job_1 = client.query(sql_query_1)  # API request
         query_job_2 = client.query(sql_query_2)  # API request
@@ -217,7 +217,7 @@ else:
                 x_1.append(int(float(x_1_values[i])))
             else:
                 null_values_1 = null_values_1 + 1
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'infra-data-391312-15c1b6264ace.json'
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
         client = bigquery.Client()
         query_job_2 = client.query(sql_query_2)  # API request
         rows_2 = query_job_2.result()  # Waits for query to finish
@@ -232,7 +232,7 @@ else:
             else:
                 null_values_2 = null_values_2 + 1
     if '.csv' not in data_source_1 and '.csv' in data_source_2:
-        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'infra-data-391312-15c1b6264ace.json'
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
         client = bigquery.Client()
         query_job_1 = client.query(sql_query_1)  # API request
         rows_1 = query_job_1.result()  # Waits for query to finish
