@@ -4,6 +4,7 @@ Tableau 2022 A-Z: Hands-On Tableau Training for Data Science (course link: https
 - https://public.tableau.com/app/profile/slavisadurdic/viz/Tableau-Section4_16065764189540/DashboardFilter
 - https://public.tableau.com/app/profile/slavisadurdic/viz/Tableau-Section5_16065907727790/Sheet1
 - https://public.tableau.com/app/profile/slavisadurdic/viz/Tableau-Section6_16065955168730/Story
+- https://public.tableau.com/app/profile/slavisadurdic/viz/UdemyTableauCourse-Section7/Dashboard1
 - https://public.tableau.com/app/profile/slavisadurdic/viz/Tableau-Section8_16066828887320/Dashboard1
 - https://public.tableau.com/app/profile/slavisadurdic/viz/UdemyTableauCourse-Section9/AverageAnnualSalaryMapTooltipactivated
 
