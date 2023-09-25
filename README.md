@@ -4,11 +4,11 @@ My portfolio of public dataset analysis/analytics.
 This GitHub repository contains two main folders (PowerBI and Tableau) and last-updated python scripts for the ETL process and statistical modeling.
 Under these main folders there are many PROJECT folders. Each project folder is created for a specific dataset analysis, and mainly consists of:
 
-readme text file with detailed description about the project,
-Microsoft Power Point file with up to 15 slides that summarizes the project,
-Power BI file(s) or a Tableau link (specified within the project's readme file) as a BI tool for visualizing data,
-python script used to pull data from BigQuery and load it into MySQL database,
-other files, such as python files for hypothesis testing, regression analysis, or similar.
+- readme text file with detailed description about the project,
+- Microsoft Power Point file with up to 15 slides that summarizes the project,
+- Power BI file(s) or a Tableau link (specified within the project's readme file) as a BI tool for visualizing data,
+- python script used to pull data from BigQuery and load it into MySQL database,
+- other files, such as python files for hypothesis testing, regression analysis, or similar.
 
 *********************
 
@@ -41,6 +41,7 @@ Analyzed topics can be classified as below:
 	- Covid19 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
 
 DATA COLLECTION
+
 Data has been collected in different formats:
 - Excel (for example, Superstore and Eurovision are projects that use this data type)
 - CSV (for example, ATP is a project that uses this data type)
@@ -50,12 +51,14 @@ Data has been collected in different formats:
 - MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau dataset analyses)
 
 DATA CLEANSING
+
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population)
 - Tableau (MSFT Income Statement) / PowerBI (London crime)
 
 DATA ANALISIS AND VISUALIZATION
+
 For data analysis and visualization PowerBI and Tableau and/or MySQL and Python have been used.
 While analyzing data, STATISTICAL modeling technics listed below has been performed:
 - Mean hypothesis testing: one sample (IMDB) / two samples (London crime) / more than two samples (1-factor ANOVA for Financials PowerBI sample)
@@ -66,6 +69,7 @@ While analyzing data, STATISTICAL modeling technics listed below has been perfor
 - Multivariate logit model (Wildlife Strikes)
 
 Miscellaneous:
+
 MySQL - often used in my projects as an additional tool to analyze data. Below is the information for which projects certain SQL queries have been used:
 - LOAD DATA INFILE (US crime, Eurovision, ATP, Wildlife Strikes)
 - JSON_EXTRACT (Star Wars)
