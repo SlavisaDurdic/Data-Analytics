@@ -81,7 +81,7 @@ try:
         cursor.execute("SELECT DATABASE();")
         record = cursor.fetchone()
         print("You're connected to database: ", record)
-        cursor.execute(f'DROP TABLE IF EXISTS {sql_table};') # This implies the table creation from scratch
+        cursor.execute(f'DROP TABLE IF EXISTS {sql_table};') # Table creation from scratch
         print('Creating table...')
         cursor.execute(f"CREATE TABLE {sql_table}(helper_id INT NOT NULL);") # This column serves as a dummy value
         # Alter the table by adding columns and determine the data types
