@@ -1,4 +1,4 @@
-# MAKE SURE TO PROVIDE CORRECT INFO FOR LINES 16-19 (and line 54 in case of JSON file)
+# MAKE SURE TO PROVIDE CORRECT INFO FOR LINES 16-20 (and line 64 in case of JSON file)
 
 import time
 import os
@@ -15,7 +15,8 @@ start = time.time()
 # Provide information for the following 4 items (independent, dependent, data_source, sql_query)
 independent = 'Enter independent variable name'
 dependent = 'Enter dependent variable name'
-data_source = 'Enter data source' # Full path to a CSV, JSON file or a BigQuery table full name, e.g. 'bigquery-public-data.imdb.title_ratings'
+data_source = 'Enter data source'  # Full path to a CSV, JSON file or a BigQuery table full name, e.g. 'bigquery-public-data.imdb.title_ratings'
+# If needed, adjust the query (add WHERE condition for example)
 sql_query = (
     f"SELECT {independent}, {dependent} FROM `{data_source}`;"
             )
@@ -23,7 +24,7 @@ sql_query = (
 if '.csv' in data_source:
     data = []
     with open(data_source, 'r') as file:
-    # with open(data_source, encoding="latin-1") as file: # Use this line in case of UnicodeDecodeError
+    # with open(data_source, encoding="latin-1") as file:  # Use this line in case of UnicodeDecodeError
         csvreader = csv.reader(file)
         for row in csvreader:
             data.append(row)
@@ -34,44 +35,54 @@ if '.csv' in data_source:
     for i in range(len(source_values)):
         independent_var.append(source_values[i][columns.index(independent)])
         dependent_var.append(source_values[i][columns.index(dependent)])
-    x = []
-    y = []
-    null_values = 0
-    for i in range(len(independent_var)):
-        if (independent_var[i] is not None or "None" not in str(independent_var[i])) and \
-                (dependent_var[i] is not None or "None" not in str(dependent_var[i])):  # Get rid of the NULL values
-            x.append(float(independent_var[i]))
-            y.append(float(dependent_var[i]))
-        else:
-            null_values = null_values + 1
-    print(f'There are {len(x)} of X and {len(y)} of Y values in the file.')
-    print(f'There are {null_values} non-matching points in the file.')
-elif '.json' in data_source:
-    with open(data_source, "r") as file:
-        data = json.load(file)
-    independent_var = []
-    dependent_var = []
-    for i in range(len(data)): # Make sure to refer the correct file keys/indexes
-        independent_var.append(data[i]["Enter key name"][independent])
-        dependent_var.append(data[i]["Enter key name"][dependent])
-    print(f'There are {len(independent_var)} of independent variables and {len(dependent_var)} of dependent variables in the file.')
+    print(
+        f'There are {len(independent_var)} of independent variables and {len(dependent_var)} of dependent variables in the file.')
     index_list = []
-    for i in range(len(independent_var)):
+    for i in range(len(independent_var)):  # Get rid of the NULL and no-numeric values
         try:
-            if (independent_var[i] is not None and dependent_var[i] is not None):  # Get rid of the NULL values
+            if independent_var[i] is not None and dependent_var[i] is not None:
                 float(independent_var[i])
                 float(dependent_var[i])
         except ValueError:
             index_list.append(i)
-    print(f'There are {len(set(index_list))} non-matching points in the file.')
-    for i in sorted(set(index_list),reverse=True):
+    print(f'There are {len(set(index_list))} mismatching points in the file.')
+    for i in sorted(set(index_list), reverse=True):
         del independent_var[i]
         del dependent_var[i]
     x = []
     y = []
     for i in range(len(independent_var)):
-        x.append(float(independent_var[i]))
-        y.append(float(dependent_var[i]))
+        if independent_var[i] is not None and dependent_var[i] is not None:
+            x.append(float(independent_var[i]))
+            y.append(float(dependent_var[i]))
+    print(f'There are {len(x)} of X and {len(y)} of Y values in the file.')
+elif '.json' in data_source:
+    with open(data_source, "r") as file:
+        data = json.load(file)
+    independent_var = []
+    dependent_var = []
+    for i in range(len(data)):  # Make sure to refer the correct file keys/indexes
+        independent_var.append(data[i]["Enter key name"][independent])
+        dependent_var.append(data[i]["Enter key name"][dependent])
+    print(f'There are {len(independent_var)} of independent variables and {len(dependent_var)} of dependent variables in the file.')
+    index_list = []
+    for i in range(len(independent_var)):  # Get rid of the NULL and no-numeric values
+        try:
+            if independent_var[i] is not None and dependent_var[i] is not None:  # Get rid of the NULL values
+                float(independent_var[i])
+                float(dependent_var[i])
+        except ValueError:
+            index_list.append(i)
+    print(f'There are {len(set(index_list))} mismatching points in the file.')
+    for i in sorted(set(index_list), reverse=True):
+        del independent_var[i]
+        del dependent_var[i]
+    x = []
+    y = []
+    for i in range(len(independent_var)):
+        if independent_var[i] is not None and dependent_var[i] is not None:
+            x.append(float(independent_var[i]))
+            y.append(float(dependent_var[i]))
     print(f'There are {len(x)} of X and {len(y)} of Y values in the file.')
 else:
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'file.json'
@@ -87,14 +98,29 @@ else:
     independent_var = []
     dependent_var = []
     for i in range(len(source_values)):
-            independent_var.append(source_values[i][0])
-            dependent_var.append(source_values[i][1])
+        independent_var.append(source_values[i][0])
+        dependent_var.append(source_values[i][1])
+    print(
+        f'There are {len(independent_var)} of independent variables and {len(dependent_var)} of dependent variables in the table.')
+    index_list = []
+    for i in range(len(independent_var)):  # Get rid of the NULL and no-numeric values
+        try:
+            if independent_var[i] is not None and dependent_var[i] is not None:
+                float(independent_var[i])
+                float(dependent_var[i])
+        except ValueError:
+            index_list.append(i)
+    print(f'There are {len(set(index_list))} mismatching points between the columns in the BigQuery table.')
+    for i in sorted(set(index_list), reverse=True):
+        del independent_var[i]
+        del dependent_var[i]
     x = []
     y = []
-    if (independent_var[i] is not None or "None" not in str(independent_var[i])) and (
-            dependent_var[i] is not None or "None" not in str(dependent_var[i])):  # Get rid of the NULL values
-        x.append(int(independent_var[i]))
-        y.append(int(dependent_var[i]))
+    for i in range(len(independent_var)):
+        if independent_var[i] is not None and dependent_var[i] is not None:
+            x.append(float(independent_var[i]))
+            y.append(float(dependent_var[i]))
+    print(f'There are {len(x)} of X and {len(y)} of Y values for the analysis.')
 
 end = time.time()
 print(f"Dependent and independent variables have been fully configured in {end - start} seconds...")
