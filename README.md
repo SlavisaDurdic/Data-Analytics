@@ -7,7 +7,7 @@ Under these main folders there are many PROJECT folders. Each project folder is 
 - readme text file with detailed description about the project,
 - Microsoft Power Point file with up to 15 slides that summarizes the project,
 - Power BI file(s) or a Tableau link (specified within the project's readme file) as a BI tool for visualizing data,
-- python script used to pull data from BigQuery and load it into MySQL database,
+- python script used to pull data from BigQuery (or CSV) and load it into MySQL database,
 - other files, such as python files for hypothesis testing, regression analysis, or similar.
 
 *********************
@@ -57,7 +57,7 @@ Not all datasets were ready for use, so more or less of data cleaning was requir
 - Python (World Bank population)
 - Tableau (MSFT Income Statement) / PowerBI (London crime)
 
-DATA ANALISIS AND VISUALIZATION
+DATA ANALYSIS AND VISUALIZATION
 
 For data analysis and visualization PowerBI and Tableau and/or MySQL and Python have been used.
 While analyzing data, STATISTICAL modeling technics listed below has been performed:
