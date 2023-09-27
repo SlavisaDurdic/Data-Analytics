@@ -11,7 +11,7 @@ Under **PowerBI** and **Tableau** folders you can find many *PROJECT* folders. E
 - python script used to pull data from BigQuery (or CSV) and load it into MySQL database,
 - other files, such as python files for hypothesis testing, regression analysis, or similar.
   
-*********************
+******
 MORE INFORMATION
 
 Analyzed topics can be classified as below:
