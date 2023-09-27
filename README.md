@@ -1,9 +1,9 @@
 # Data-Analytics
 My portfolio of public dataset analysis/analytics.
 
-This GitHub repository contains three folders: Scripts, PowerBI, and Tableau.
-Under the **Scripts** folder you can find last-updated python scripts for the ETL process and statistical modeling.
-Under **PowerBI** and **Tableau** folders you can find many PROJECT folders. Each project folder is created for a specific dataset analysis, and mainly consists of:
+This GitHub repository contains three folders: Scripts, PowerBI, and Tableau.\
+Under the **Scripts** folder you can find last-updated python scripts for the ETL process and statistical modeling.\
+Under **PowerBI** and **Tableau** folders you can find many *PROJECT* folders. Each project folder is created for a specific dataset analysis, and mainly consists of:
 
 - readme text file with detailed description about the project,
 - Microsoft Power Point file with up to 15 slides that summarizes the project,
