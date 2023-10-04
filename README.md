@@ -33,7 +33,7 @@ Analyzed topics can be classified as below:
 	- US crime (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime)
 	- World Bank population (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
 - Education:
-	- University Advancement, Donations, and Giving (... not started yet)
+	- University Advancement, Donations, and Giving (https://public.tableau.com/app/profile/slavisadurdic/viz/USCollegeDonations_16962790623100/USCollegeDonations)
 - Science:
 	- Significant Volcanic Eruptions (... not started yet)
 - Health:
@@ -67,6 +67,7 @@ While analyzing data, STATISTICAL modeling technics listed below has been perfor
 - Cluster analysis (Star Wars)
 - Multivariate logistic model (Wildlife Strikes)
 - Mean hypothesis testing: one sample (IMDB) / two samples (London crime) / more than two samples (1-factor ANOVA for Financials PowerBI sample)
+- Proportion hypothesis testing: one sample (University donations)
 - Goodness of fit hypothesis testing (Superstore)
 
 Miscellaneous:
@@ -75,8 +76,8 @@ MySQL - often used in my projects as an additional tool to analyze data. Below i
 - LOAD DATA INFILE (US crime, Eurovision, ATP, Wildlife Strikes)
 - JSON_EXTRACT (Star Wars)
 - joins (Covid19)
-- CASE WHEN THEN ELSE (Eurovision)
+- CASE WHEN THEN ELSE (Eurovision, University donations)
 - IF (Star Wars)
-- ROUND, CONVERT... (Star Wars)
+- ROUND, CONVERT... (Star Wars, University donations)
 - stored procedure (Eurovision)
 
