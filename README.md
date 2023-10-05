@@ -33,7 +33,7 @@ Analyzed topics can be classified as below:
 	- US crime (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime)
 	- World Bank population (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
 - Education:
-	- University Advancement, Donations, and Giving (https://public.tableau.com/app/profile/slavisadurdic/viz/USCollegeDonations_16962790623100/USCollegeDonations)
+	- University Advancement, Donations, and Giving (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
 - Science:
 	- Significant Volcanic Eruptions (... not started yet)
 - Health:
