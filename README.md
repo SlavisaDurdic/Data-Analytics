@@ -1,13 +1,13 @@
 # Data-Analytics
 My portfolio of public dataset analysis/analytics.
 
-This GitHub repository contains three folders: Scripts, PowerBI, and Tableau.\
+This GitHub repository contains four folders: Scripts, PowerBI, Tableau, and Looker Studio.\
 Under the **Scripts** folder you can find last-updated python scripts for the ETL process and statistical modeling.\
-Under **PowerBI** and **Tableau** folders you can find many *PROJECT* folders. Each project folder is created for a specific dataset analysis, and mainly consists of:
+Under **PowerBI**, **Tableau**, and **Looker Studio** folders (each representing a different BI tool) you can find many *PROJECT* folders. Each project folder is created for a specific dataset analysis, and mainly consists of:
 
 - readme text file with detailed description about the project,
 - Microsoft Power Point file with up to 15 slides that summarizes the project,
-- Power BI file(s) or a Tableau link (specified within the project's readme file) as a BI tool for visualizing data,
+- Power BI file(s) or Tableau or Looker Studio link (specified within the project's readme file) as a BI tool for visualizing data,
 - python script used to pull data from BigQuery (or CSV) and load it into MySQL database,
 - other files, such as python files for hypothesis testing, regression analysis, or similar.
   
@@ -28,7 +28,7 @@ Analyzed topics can be classified as below:
 	- ATP Top-Ranked Singles Tennis Players (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/ATP)
 - Public Data:
 	- FAA Wildlife Strikes, 2015 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Wildlife_Strikes)
-	- U.S. Home Sales, 1963-2016 (... not started yet)
+	- U.S. Home Sales, 1963-2016 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Government%20-%20Home%20Sales)
 	- London crime (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20LondonCrime)
 	- US crime (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime)
 	- World Bank population (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
