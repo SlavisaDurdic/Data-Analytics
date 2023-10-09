@@ -35,7 +35,7 @@ Analyzed topics can be classified as below:
 - Education:
 	- University Advancement, Donations, and Giving (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
 - Science:
-	- Significant Volcanic Eruptions (... not started yet)
+	- Significant Volcanic Eruptions (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions)
 - Health:
 	- U.S. County Health Rankings (... not started yet)
 	- Covid19 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
@@ -59,7 +59,7 @@ Not all datasets were ready for use, so more or less of data cleaning was requir
 
 DATA ANALYSIS AND VISUALIZATION
 
-For data analysis and visualization PowerBI and Tableau and/or MySQL and Python have been used.
+For data analysis and visualization PowerBI, Tableau, Looker Studio, and/or MySQL and Python have been used.
 While analyzing data, STATISTICAL modeling technics listed below has been performed:
 
 - Simple regression model (covid19, Financials PowerBI sample, US crime, Eurovision, Star Wars)
