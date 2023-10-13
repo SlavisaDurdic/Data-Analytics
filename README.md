@@ -18,7 +18,7 @@ Analyzed topics can be classified as below:
 - Business:
 	- Superstore Sales (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Superstore)
 	- Financials (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20PowerBI%20Financials)
-	- Startup Venture Funding (... not started yet)
+	- Startup Venture Funding (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Technology%20-%20Startup%20Venture%20Funding)
 	- Microsoft Financial Report (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/MSFT)
 - Entertainment:
 	- Eurovision 1998 to 2010 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Eurovision)
@@ -55,7 +55,7 @@ DATA CLEANSING
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population)
-- Tableau (MSFT Income Statement) / PowerBI (London crime)
+- Tableau (MSFT Income Statement) / PowerBI (London crime) / Looker Studio (Startup Venture Funding)
 
 DATA ANALYSIS AND VISUALIZATION
 
