@@ -12,7 +12,8 @@ Under **PowerBI**, **Tableau**, and **Looker Studio** folders (each representing
 - other files, such as python files for hypothesis testing, regression analysis, or similar.
   
 ******
-MORE INFORMATION
+
+**PROJECT CLASSIFICATION**
 
 Analyzed topics can be classified as below:
 - Business:
@@ -40,7 +41,7 @@ Analyzed topics can be classified as below:
 	- U.S. County Health Rankings (... not started yet)
 	- Covid19 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
 
-DATA COLLECTION
+**DATA COLLECTION**
 
 Data has been collected in different formats:
 - Excel (for example, Superstore and Eurovision are projects that use this data type)
@@ -50,14 +51,14 @@ Data has been collected in different formats:
 - BigQuery (PowerBI datasets are based on BigQuery tables)
 - MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau dataset analyses)
 
-DATA CLEANSING
+**DATA CLEANSING**
 
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population)
 - Tableau (MSFT Income Statement) / PowerBI (London crime) / Looker Studio (Startup Venture Funding)
 
-DATA ANALYSIS AND VISUALIZATION
+**DATA ANALYSIS AND VISUALIZATION**
 
 For data analysis and visualization PowerBI, Tableau, Looker Studio, and/or MySQL and Python have been used.
 While analyzing data, STATISTICAL modeling technics listed below has been performed:
@@ -70,7 +71,7 @@ While analyzing data, STATISTICAL modeling technics listed below has been perfor
 - Proportion hypothesis testing: one sample (University donations)
 - Goodness of fit hypothesis testing (Superstore)
 
-Miscellaneous:
+**MISCELLANEOUS**
 
 MySQL - often used in my projects as an additional tool to analyze data. Below is the information for which projects certain SQL queries have been used:
 - LOAD DATA INFILE (US crime, Eurovision, ATP, Wildlife Strikes)
