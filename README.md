@@ -13,7 +13,7 @@ Under **PowerBI**, **Tableau**, and **Looker Studio** folders (each representing
   
 ******
 
-**PROJECT CLASSIFICATION**
+## PROJECT CLASSIFICATION
 
 Analyzed topics can be classified as below:
 - Business:
