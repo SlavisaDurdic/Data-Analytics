@@ -13,35 +13,35 @@ Under **PowerBI**, **Tableau**, and **Looker Studio** folders (each representing
   
 ******
 
-### PROJECT CLASSIFICATION
+## PROJECT CLASSIFICATION
 
 Analyzed topics can be classified as below:
 - Business:
-	- Superstore Sales (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Superstore)
-	- Financials (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20PowerBI%20Financials)
-	- Startup Venture Funding (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Technology%20-%20Startup%20Venture%20Funding)
-	- Microsoft Financial Report (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/MSFT)
+	> Superstore Sales [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Superstore)
+	> Financials (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20PowerBI%20Financials)
+	> Startup Venture Funding [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Technology%20-%20Startup%20Venture%20Funding)
+	> Microsoft Financial Report [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/MSFT)
 - Entertainment:
-	- Eurovision 1998 to 2010 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Eurovision)
-	- Star Wars Character Details (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Star_Wars)
-	- IMDB (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20IMDB)
+	> Eurovision 1998 to 2010 [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Eurovision)
+	> Star Wars Character Details [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Star_Wars)
+	> IMDB [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20IMDB)
 - Sports:
-	- ATP Top-Ranked Singles Tennis Players (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/ATP)
+	> ATP Top-Ranked Singles Tennis Players [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/ATP)
 - Public Data:
-	- FAA Wildlife Strikes, 2015 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Wildlife_Strikes)
-	- U.S. Home Sales, 1963-2016 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Government%20-%20Home%20Sales)
-	- London crime (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20LondonCrime)
-	- US crime (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime)
-	- World Bank population (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
+	> FAA Wildlife Strikes, 2015 [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Wildlife_Strikes)
+	> U.S. Home Sales, 1963-2016 [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Government%20-%20Home%20Sales)
+	> London crime [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20LondonCrime)
+	> US crime [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime)
+	> World Bank population [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
 - Education:
-	- University Advancement, Donations, and Giving (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
+	> University Advancement, Donations, and Giving [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
 - Science:
-	- Significant Volcanic Eruptions (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions)
+	> Significant Volcanic Eruptions [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions)
 - Health:
-	- U.S. County Health Rankings (... not started yet)
-	- Covid19 (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
+	> U.S. County Health Rankings (... not started yet)
+	> Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
 
-### DATA COLLECTION
+## DATA COLLECTION
 
 Data has been collected in different formats:
 - Excel (for example, Superstore and Eurovision are projects that use this data type)
@@ -51,14 +51,14 @@ Data has been collected in different formats:
 - BigQuery (PowerBI datasets are based on BigQuery tables)
 - MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau dataset analyses)
 
-### DATA CLEANSING
+## DATA CLEANSING
 
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population)
 - Tableau (MSFT Income Statement) / PowerBI (London crime) / Looker Studio (Startup Venture Funding)
 
-### DATA ANALYSIS AND VISUALIZATION
+## DATA ANALYSIS AND VISUALIZATION
 
 For data analysis and visualization PowerBI, Tableau, Looker Studio, and/or MySQL and Python have been used.
 While analyzing data, STATISTICAL modeling technics listed below has been performed:
@@ -71,7 +71,7 @@ While analyzing data, STATISTICAL modeling technics listed below has been perfor
 - Proportion hypothesis testing: one sample (University donations)
 - Goodness of fit hypothesis testing (Superstore)
 
-### MISCELLANEOUS
+## MISCELLANEOUS
 
 MySQL - often used in my projects as an additional tool to analyze data. Below is the information for which projects certain SQL queries have been used:
 - LOAD DATA INFILE (US crime, Eurovision, ATP, Wildlife Strikes)
