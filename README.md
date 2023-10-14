@@ -22,14 +22,17 @@ Analyzed topics can be classified as below:
 	- Financials (https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20PowerBI%20Financials)
 	- Startup Venture Funding [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Technology%20-%20Startup%20Venture%20Funding)
 	- Microsoft Financial Report [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/MSFT)
+ 
 > Entertainment:
 
 	- Eurovision 1998 to 2010 [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Eurovision)
 	- Star Wars Character Details [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Star_Wars)
 	- IMDB [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20IMDB)
+
 > Sports:
 
 	- ATP Top-Ranked Singles Tennis Players [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/ATP)
+
 > Public Data:
 
 	- FAA Wildlife Strikes, 2015 [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Wildlife_Strikes)
@@ -37,12 +40,15 @@ Analyzed topics can be classified as below:
 	- London crime [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20LondonCrime)
 	- US crime [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime)
 	- World Bank population [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
+
 > Education:
 
 	- University Advancement, Donations, and Giving [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
+
 > Science:
 
 	- Significant Volcanic Eruptions [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions)
+
 > Health:
 
 	- U.S. County Health Rankings (... not started yet)
