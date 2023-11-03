@@ -51,7 +51,7 @@ Analyzed topics can be classified as below:
 
 - Health:
 
-> U.S. County Health Rankings (... not started yet) /
+> U.S. County Health Rankings (... not started yet) \
 > Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
 
 ## DATA COLLECTION
