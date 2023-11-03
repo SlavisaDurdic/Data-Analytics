@@ -49,10 +49,10 @@ Analyzed topics can be classified as below:
 
 - Significant Volcanic Eruptions [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions)
 
-> Health:
+- Health:
 
-- U.S. County Health Rankings (... not started yet)
-- Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
+> U.S. County Health Rankings (... not started yet) /
+> Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
 
 ## DATA COLLECTION
 
