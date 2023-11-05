@@ -51,7 +51,7 @@ Analyzed topics can be classified as below:
 
 - Health:
 
-> U.S. County Health Rankings (... not started yet) \
+> Global Burden of Disease [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Health%20-%20Global%20Burden%20of%20Disease) \
 > Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
 
 ## DATA COLLECTION
@@ -80,6 +80,7 @@ While analyzing data, STATISTICAL modeling technics listed below has been perfor
 - Time series (PowerBI: London crime, WB population; Tableau: Wildlife Strikes)
 - Cluster analysis (Star Wars)
 - Multivariate logistic model (Wildlife Strikes)
+- Multivariate linear model (Global Burden of Disease)
 - Mean hypothesis testing: one sample (IMDB) / two samples (London crime) / more than two samples (1-factor ANOVA for Financials PowerBI sample)
 - Proportion hypothesis testing: one sample (University donations)
 - Goodness of fit hypothesis testing (Superstore)
