@@ -74,7 +74,7 @@ Not all datasets were ready for use, so more or less of data cleaning was requir
 ## DATA ANALYSIS AND VISUALIZATION
 
 For data analysis and visualization PowerBI, Tableau, Looker Studio, and/or MySQL and Python have been used.
-While analyzing data, STATISTICAL modeling technics listed below has been performed:
+While analyzing data, STATISTICAL modeling technics listed below have been performed:
 
 - Simple regression model (covid19, Financials PowerBI sample, US crime, Eurovision, Star Wars)
 - Time series (PowerBI: London crime, WB population; Tableau: Wildlife Strikes)
