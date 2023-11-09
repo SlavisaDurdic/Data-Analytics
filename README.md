@@ -16,6 +16,7 @@ Under **PowerBI**, **Tableau**, and **Looker Studio** folders (each representing
 ## PROJECT CLASSIFICATION
 
 Analyzed topics can be classified as below:
+
 - Business:
 
 > Superstore Sales [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Superstore) \
@@ -47,7 +48,8 @@ Analyzed topics can be classified as below:
 
 - Science:
 
-> Significant Volcanic Eruptions [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions)
+> Significant Volcanic Eruptions [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions) \
+> Animal Speed [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20AnimalSpeed)
 
 - Health:
 
@@ -56,12 +58,13 @@ Analyzed topics can be classified as below:
 
 ## DATA COLLECTION
 
-Data has been collected in different formats:
+Data has been collected in/from different formats/sources:
 - Excel (for example, Superstore and Eurovision are projects that use this data type)
 - CSV (for example, ATP is a project that uses this data type)
 - JSON (for example, Star Wars is a project that uses this data type)
 - PDF (for example, MSFT Income Statement is a project that uses this data type)
 - BigQuery (PowerBI datasets are based on BigQuery tables)
+- URL (for example, Animal Speed is a project that uses data from this datasource)
 - MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau dataset analyses)
 
 ## DATA CLEANSING
@@ -69,7 +72,7 @@ Data has been collected in different formats:
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population)
-- Tableau (MSFT Income Statement) / PowerBI (London crime) / Looker Studio (Startup Venture Funding)
+- Tableau (MSFT Income Statement) / PowerBI Power Query (London crime, Animal Speed) / Looker Studio (Startup Venture Funding)
 
 ## DATA ANALYSIS AND VISUALIZATION
 
