@@ -15,7 +15,7 @@ Under **PowerBI**, **Tableau**, and **Looker Studio** folders (each representing
 
 ## PROJECT CLASSIFICATION
 
-Analyzed topics can be classified as below:
+I have decided to classify analyzed topics into several categories, as shown below:
 
 - Business:
 
@@ -28,10 +28,7 @@ Analyzed topics can be classified as below:
 
 > Eurovision 1998 to 2010 [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Eurovision) \
 > Star Wars Character Details [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Star_Wars) \
-> IMDB [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20IMDB)
-
-- Sports:
-
+> IMDB [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20IMDB) \
 > ATP Top-Ranked Singles Tennis Players [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/ATP)
 
 - Public Data:
@@ -42,29 +39,25 @@ Analyzed topics can be classified as below:
 > US crime [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20US_crime) \
 > World Bank population [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20WorldBank)
 
-- Education:
-
-> University Advancement, Donations, and Giving [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
-
 - Science:
 
 > Significant Volcanic Eruptions [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Science%20-%20Volcano%20Eruptions) \
-> Animal Speed [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20AnimalSpeed)
-
-- Health:
-
+> Animal Speed [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20AnimalSpeed) \
+> Belgrade Weather [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Belgrade_weather) \
 > Global Burden of Disease [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Health%20-%20Global%20Burden%20of%20Disease) \
-> Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19)
+> Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19) \
+> University Advancement, Donations, and Giving [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
 
 ## DATA COLLECTION
 
 Data has been collected in/from different formats/sources:
 - Excel (for example, Superstore and Eurovision are projects that use this data type)
 - CSV (for example, ATP is a project that uses this data type)
-- JSON (for example, Star Wars is a project that uses this data type)
+- JSON (for example, Star Wars and Belgrade Weather are projects that uses this data type)
 - PDF (for example, MSFT Income Statement is a project that uses this data type)
-- BigQuery (PowerBI datasets are based on BigQuery tables)
 - URL (for example, Animal Speed is a project that uses data from this datasource)
+- REST API (for example, Belgrade Weather is a project that uses data from this datasource)
+- BigQuery (PowerBI datasets are based on BigQuery tables)
 - MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau dataset analyses)
 
 ## DATA CLEANSING
@@ -72,7 +65,7 @@ Data has been collected in/from different formats/sources:
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population)
-- Tableau (MSFT Income Statement) / PowerBI Power Query (London crime, Animal Speed) / Looker Studio (Startup Venture Funding)
+- Tableau (MSFT Income Statement, Belgrade Weather) / PowerBI Power Query (London crime, Animal Speed) / Looker Studio (Startup Venture Funding)
 
 ## DATA ANALYSIS AND VISUALIZATION
 
