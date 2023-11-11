@@ -2,6 +2,7 @@ I have decided to distinguish datasets that come from Tableau as learning sample
 
 1) Tableau Sample Datasets, as name suggests, is the folder that contains my own projects based on Tableau sample datasets.
 2) MSFT is another project folder with a PDF file that I have downloaded from the Microsoft site.
+3) Belgrade_weather is another project folder with data(source) obtained via API.
 
 Also, if interested in, below you can find visuals I made when I was going through "Tableau 2022 A-Z: Hands-On Tableau Training for Data Science" course lectures (course link: https://www.udemy.com/course/tableau10/). Course visuals:
 - https://public.tableau.com/app/profile/slavisadurdic/viz/Tableau-Section2_16063341596190/Sheet1
