@@ -10,7 +10,7 @@ TASK i.e. WHAT HAVE I DONE?
 
 *** Python Activities ***
 
-(I have asked ChatGPT and) I have used python code generated from ChatGPT to download Apple 3-year hystorical data from Yahoo Finance and upload it to a MySQL table and CSV file. The code has been saved in the script "ETL from Yahoo Finance to CSV and MySQL - AAPL_stock_data.py", which can be found in the project folder.
+(Idea was to use advanced AI technologies, so I have asked ChatGPT and) I have used python code generated from ChatGPT to download Apple 3-year hystorical data from Yahoo Finance and upload it to a MySQL table and CSV file. The code has been saved in the script "ETL from Yahoo Finance to CSV and MySQL - AAPL_stock_data.py", which can be found in the project folder.
 Again with help of ChatGPT I have used python code to perform lots of quantitative models over Apple stock data (i.e., Adj Close price) such as ARIMA, GARCH, machine learning models, Monte Carlo simulation, Black-Scholes option pricing model, EWMA, and others. The python script "Statistical Models in Python - AAPL_stock_data.py" can be found in project folder.
 
 
