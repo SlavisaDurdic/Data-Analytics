@@ -1,0 +1,84 @@
+
+TASK i.e. WHAT HAVE I DONE?
+
+- With the use of ChatGPT collect data by downloading Apple stock data for period 1/1/2020-1/1/2023 from Yahoo Finance via yfinance python library.
+- Load the data to MySQL and CSV file.
+- Execute SQL queries in MySQL to calculate daily returns of Apple stock for 1/1/2020-1/1/2023 period as well as the mean and standard deviation.
+- Connect to the CSV file from Looker Studio and build visuals (https://lookerstudio.google.com/reporting/650846d0-8a6c-473a-95ea-f73398897ce1/page/Co9hD).
+- With the use of ChatGPT perform many different quantitative models in Python such as Descriptive statistics, Time Series (ARIMA), Volatility Model (GARCH), Exponential Moving Average (EWMA), Regression Analysis, Correlation Analysis, Machine Learning Models - Linear Regression and SVM, Black-Scholes Model, and Monte Carlo Simulation.
+
+
+*** Python Activities ***
+
+(I have asked ChatGPT and) I have used python code generated from ChatGPT to download Apple 3-year hystorical data from Yahoo Finance and upload it to a MySQL table and CSV file. The code has been saved in the script "ETL from Yahoo Finance to CSV and MySQL - AAPL_stock_data.py", which can be found in the project folder.
+Again with help of ChatGPT I have used python code to perform lots of quantitative models over Apple stock data (i.e., Adj Close price) such as ARIMA, GARCH, machine learning models, Monte Carlo simulation, Black-Scholes option pricing model, EWMA, and others. The python script "Statistical Models in Python - AAPL_stock_data.py" can be found in project folder.
+
+
+*** MySQL Activities ***
+
+With below queries I have calculated Apple stock daily returns as well as standard deviation (=0.02325041491453386) and mean value (=0.0010238513748406562) for the 3Y period 1/1/2020-1/1/2023.
+
+-- Daily returns:
+WITH CTE AS (SELECT Date, `Adj Close`, LAG(`Adj Close`) OVER (ORDER BY Date) AS `Lag Price` FROM data_analysis.appl_stock_data)
+SELECT *, 
+COALESCE((`Adj Close` - `Lag Price`)/`Lag Price`,0) AS `Daily Returns`
+FROM CTE;
+-- Mean and standard deviation:
+WITH CTE AS (SELECT Date, `Adj Close`, LAG(`Adj Close`) OVER (ORDER BY Date) AS `Lag Price` FROM data_analysis.appl_stock_data)
+SELECT AVG((`Adj Close` - `Lag Price`)/`Lag Price`) AS Mean, STDDEV((`Adj Close` - `Lag Price`)/`Lag Price`) AS `Standard Deviation`
+FROM CTE;
+
+
+*** Looker Studio Activities ***
+
+The report is accessible through this Looker Studio link: https://lookerstudio.google.com/reporting/650846d0-8a6c-473a-95ea-f73398897ce1/page/Co9hD 
+I have built a table view, few score cards, and two line charts. Those visuals show Apple stock price movement and the corresponding daily returns for the period 1/1/2020-1/1/2023.
+Insights on the data can be found in the Power Point file.
+
+
+*** Statistical Models *** 
+
+Other than graphical illustration, there are also non-graphical quantitative results, shown below.
+
+> Descriptive Statistics:
+
+Mean: 0.0010: The average daily return is slightly positive.
+Median: 0.0006: The median return is lower than the mean, suggesting a right-skewed distribution.
+Standard Deviation: 0.0233: The volatility of the returns is moderate.
+Skewness: 0.0950: The skewness is positive, indicating a right-skewed distribution.
+
+> ARIMA:
+
+ADF Statistic: -8.8145: The ADF statistic is highly negative, suggesting stationarity.
+p-value: 1.95e-14: The p-value is very low, providing strong evidence against the null hypothesis of non-stationarity.
+The highly negative ADF statistic and low p-value indicate that the time series is likely stationary. Differencing is used to achieve stationarity.
+ADF Statistic (Differenced): -12.1870: The ADF statistic for differenced series is also highly (even more) negative.
+p-value (Differenced): 1.31e-22: The p-value for differenced series is very low, confirming stationarity.
+
+> Regression Analysis:
+
+The regression equation is Adj Close = 83.9378 + 0.1182 * Time.
+The R-squared value indicates that the model explains about 71% of the variance.
+
+> Machine learning:
+
+Linear Regression Mean Squared Error: 290.4730999700918
+SVM Mean Squared Error: 115.60361283279501
+Linear Regression Mean Absolute Error: 13.957960870600573
+SVM Mean Absolute Error: 8.749303776097939
+
+These metrics give an indication of model performance; lower values are better, and these metrics give an indication of how well the models fit the data.
+
+> Black-Scholes:
+
+# Parameters for Black-Scholes
+spot_price = time_series.iloc[-1]  # current stock price
+strike_price = spot_price * 1.1  # arbitrary strike price
+time_to_maturity = 1  # arbitrary time to maturity in years
+risk_free_rate = 0.01  # arbitrary risk-free rate
+volatility_bs = results_garch.conditional_volatility[-1]  # using GARCH volatility as a proxy for future volatility
+
+# Calculated parameters
+Spot price is 129.20777893066406. Strike price is 142.1285568237305. TTM is 1. Risk-free rate is 0.01. Volatility is 0.3987778042564108.
+
+Black-Scholes Call Option Price is 16.06.
