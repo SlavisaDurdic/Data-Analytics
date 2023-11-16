@@ -12,6 +12,8 @@ This GitHub repository hosts a collection of data analyses performed on publicly
 - Each folder represents a different Business Intelligence (BI) tool.
 - Project folders within these directories are created for specific dataset analyses, featuring detailed descriptions, presentation slides, BI tool links, data extraction scripts, and other relevant files.
 
+This repository serves as a comprehensive resource for data enthusiasts, showcasing real-world applications of data analysis across different domains and technologies. Feel free to explore the folders and projects to gain insights into the methodologies and techniques employed in each analysis.
+
 ## Project Classification:
 
 Projects are categorized into business, entertainment, public data, and science topics, with specific examples listed under each category. Each project includes BI tool views for easy exploration.
@@ -97,6 +99,4 @@ Specific SQL queries are mentioned for projects where MySQL was applied, includi
 - (Window) LAG (Apple Stock Data),
 - ROUND, CONVERT, COALESCE,... (Star Wars, University donations, Apple Stock Data)
 - stored procedure (Eurovision)
-
-This repository serves as a comprehensive resource for data enthusiasts, showcasing real-world applications of data analysis across different domains and technologies. Feel free to explore the folders and projects to gain insights into the methodologies and techniques employed in each analysis.
 
