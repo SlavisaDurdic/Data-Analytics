@@ -22,7 +22,8 @@ I have decided to classify analyzed topics into several categories, as shown bel
 > Superstore Sales [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/Superstore) \
 > Financials [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20PowerBI%20Financials) \
 > Startup Venture Funding [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Tableau%20Datasets%20used%20for%20Looker/Technology%20-%20Startup%20Venture%20Funding) \
-> Microsoft Financial Report [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/MSFT)
+> Microsoft Financial Report [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/MSFT) \
+> Apple Stock Data [View this report in Looker Studio](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Looker%20Studio/Apple_Stocks)
  
 - Entertainment:
 
@@ -52,19 +53,20 @@ I have decided to classify analyzed topics into several categories, as shown bel
 
 Data has been collected in/from different formats/sources:
 - Excel (for example, Superstore and Eurovision are projects that use this data type)
-- CSV (for example, ATP is a project that uses this data type)
+- CSV (for example, ATP and Apple Stock Data are projects that use this data type)
 - JSON (for example, Star Wars and Belgrade Weather are projects that uses this data type)
 - PDF (for example, MSFT Income Statement is a project that uses this data type)
 - URL (for example, Animal Speed is a project that uses data from this datasource)
 - REST API (for example, Belgrade Weather is a project that uses data from this datasource)
+- Yahoo Finance via yfinance python library (for example, Apple Stock Data is a project that uses this datasource)
 - BigQuery (PowerBI datasets are based on BigQuery tables)
-- MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau dataset analyses)
+- MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau and Looker dataset analyses)
 
 ## DATA CLEANSING
 
 Not all datasets were ready for use, so more or less of data cleaning was required now and then, which has been done via different tools:
 - Excel / CSV (US crime, Wildlife Strikes)
-- Python (World Bank population)
+- Python (World Bank population, Apple Stock Data)
 - Tableau (MSFT Income Statement, Belgrade Weather) / PowerBI Power Query (London crime, Animal Speed) / Looker Studio (Startup Venture Funding)
 
 ## DATA ANALYSIS AND VISUALIZATION
@@ -80,6 +82,7 @@ While analyzing data, STATISTICAL modeling technics listed below have been perfo
 - Mean hypothesis testing: one sample (IMDB) / two samples (London crime) / more than two samples (1-factor ANOVA for Financials PowerBI sample)
 - Proportion hypothesis testing: one sample (University donations)
 - Goodness of fit hypothesis testing (Superstore)
+- Advanced quantitative technics such as ACF, PACF, EWMA, ARIMA, GARCH, Regression/Correlation Analysis, Machine Learning models, Black-Scholes model, and Monte Carlo simulation (Apple Stock Data)
 
 ## MISCELLANEOUS
 
@@ -88,7 +91,9 @@ MySQL - often used in my projects as an additional tool to analyze data. Below i
 - JSON_EXTRACT (Star Wars)
 - joins (Covid19)
 - CASE WHEN THEN ELSE (Eurovision, University donations)
-- IF (Star Wars)
-- ROUND, CONVERT... (Star Wars, University donations)
+- IF (Star Wars),
+- (Window) ROW_NUMBER (Covid19, US Crime, College Donations, Eurovision),
+- (Window) LAG (Apple Stock Data),
+- ROUND, CONVERT, COALESCE,... (Star Wars, University donations, Apple Stock Data)
 - stored procedure (Eurovision)
 
