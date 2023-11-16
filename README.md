@@ -48,7 +48,7 @@ Projects are categorized into business, entertainment, public data, and science 
 > Covid19 [View this report in Power BI](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/PowerBI/Project%20Covid19) \
 > University Advancement, Donations, and Giving [View this report in Tableau](https://github.com/SlavisaDurdic/Data-Analytics/tree/main/Tableau/Tableau%20Sample%20Datasets/US_College_Donations)
 
-## Data Collection:
+## Data Collection and Cleaning:
 
 Data is sourced from various formats, including Excel, CSV, JSON, PDF, URL, REST API, Yahoo Finance, BigQuery, and MySQL. Data cleansing is performed using tools like Excel, CSV, Python, Tableau, PowerBI Power Query, and Looker Studio.
 
@@ -63,7 +63,7 @@ Datasources:
 - BigQuery (PowerBI datasets are based on BigQuery tables)
 - MySQL database (served as a destination database for PowerBI datasets, but also used for Tableau and Looker dataset analyses)
 
-Cleansing:
+Data Cleansing:
 - Excel / CSV (US crime, Wildlife Strikes)
 - Python (World Bank population, Apple Stock Data)
 - Tableau (MSFT Income Statement, Belgrade Weather) / PowerBI Power Query (London crime, Animal Speed) / Looker Studio (Startup Venture Funding)
